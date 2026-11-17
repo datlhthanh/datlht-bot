@@ -1,1 +1,2 @@
 export const ALLOWED_USER_ID = 8807703123;
+export const ALLOWED_GROUP_ID = -5323302678;

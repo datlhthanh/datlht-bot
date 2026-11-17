@@ -3,9 +3,14 @@ import {
   getPrintA5Url,
   validatePrintA5Codes,
 } from "../services/print-a5.service.js";
+import { ALLOWED_GROUP_ID } from "../utils/constants.utils.js";
 
 export function printA5Handler(bot) {
   bot.on("message:text", async (ctx, next) => {
+    if (ctx.chat?.id !== ALLOWED_GROUP_ID) {
+      return;
+    }
+
     const text = ctx.message.text.trim();
     const lines = text.split("\n").map((line) => line.trim());
     const lastLine = lines[lines.length - 1].toLowerCase();
