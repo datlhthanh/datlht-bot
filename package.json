@@ -1,0 +1,27 @@
+{
+  "name": "datlht-bot",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/datlhthanh/datlht-bot#readme",
+  "bugs": {
+    "url": "https://github.com/datlhthanh/datlht-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datlhthanh/datlht-bot.git"
+  },
+  "license": "ISC",
+  "author": "Le Hoang Thanh Dat",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "grammy": "^1.46.0",
+    "mongodb": "^7.9.0"
+  }
+}
